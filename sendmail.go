@@ -24,7 +24,7 @@ func main() {
 	m.SetBody("text/html", "Hello <b>Bob</b> and <i>Cora</i>!")
 	m.Attach("/Users/cui/Downloads/cogo.jpg")
 
-	d := gomail.NewDialer("smtp.exmail.qq.com", 465, "cuizhimou@cogo.club", "VchqhFBAibiWcUup")
+	d := gomail.NewDialer("smtp.exmail.qq.com", 465, "cuizhimou@cogo.club", "123456")
 
 	// Send the email to Bob, Cora and Dan.
 	if err := d.DialAndSend(m); err != nil {
